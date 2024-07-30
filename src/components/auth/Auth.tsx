@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AuthContext from "../../context/AuthProvider.tsx";
 import React from "react";
 import Login from "./Login.tsx";
-// import Register from "./Register";
+import Register from "./Register.tsx";
 import UserInfo from "./UserInfo.tsx";
 
 // Auth = Register + Login
@@ -87,7 +87,7 @@ const Auth = () => {
 				{showLoginButton && <button className="login-button" onClick={() => onClickLoginButton()}>LOGIN</button>}
 				{showLogoutButton && <button className='logout-button' onClick={() => logout()}>LOGOUT</button>}
 				{showLoginForm && <Login onClickSaveButton={onClickSaveButton} />}
-				{/* {showRegisterForm && <Register onClickSaveButton={onClickSaveButton} />} */}
+				{showRegisterForm && <Register onClickSaveButton={onClickSaveButton} />}
 				{showAccount && <UserInfo />}
 			</div>
 		</div>
