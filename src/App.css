@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+/* Global styles */
+body {
+  background-color: #ececec;
+  color: #000000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Auth component styles */
+.Auth {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+.auth-form {
+  background-color: #ececec;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.home-button {
+  color: #ff6b6b;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.home-button:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+button {
+  background-color: #ff6b6b;
   color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #e65c5c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background-color: #cc4d4d;
+}
+
+.logout-button {
+  background-color: #ff4747;
+}
+
+.logout-button:hover {
+  background-color: #e63d3d;
+}
+
+.logout-button:active {
+  background-color: #cc3333;
+}
+
+/* Login component styles */
+.Login {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h1 {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.error {
+  background-color: #ff4747;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 300px; /* Adjust the max-width as needed */
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+}
+
+.auth-input::placeholder {
+  color: #a0a0a0;
+}
+
+.save {
+  background-color: #ff6b6b;
+}
+
+.save:hover {
+  background-color: #e65c5c;
+}
+
+.save:active {
+  background-color: #cc4d4d;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.user-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px; /* Set the width in pixels */
+  height: auto; /* Maintain aspect ratio, adjust if needed */
+  padding: 0px; /* Optional: Adds some space around the image */
+  background: none;
+}
+
+.users-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px; /* Set the width in pixels */
+  height: auto; /* Maintain aspect ratio, adjust if needed */
+  padding: 0px; /* Optional: Adds some space around the image */
+  background: none;
+}
+
+.people-header {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
