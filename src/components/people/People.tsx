@@ -42,6 +42,8 @@ const People = () => {
                         <div className="person" key={person._id}>
                             <div className='info'>
                                 <h2>{person.username}</h2>
+                                <Link to="/" className="home-button">Chat</Link>
+                                <p>______________________</p>
                             </div>
                         </div>
                     )}
